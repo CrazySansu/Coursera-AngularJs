@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>AngularJS assignment - 1 </title>
+        <script src="../angular.min.js" charset="utf-8"></script>
+        <script src="Js/myApp.js"></script>
+        <style>
+            body{
+                width: 80%;
+                margin: 10px auto;
+            }
+            div, h1{
+                text-align: center;
+                margin-top: 50px;
+            }
+            input{
+                width: 30%;
+                height: 30px;
+            }
+            button{
+                width: 10%;
+                height: 36px;
+            }
+            span{
+                font-size : 1.5em;
+                text-align : center;
+            }
+        </style>
+    </head>
+    <body ng-app="assignmentOne">
+        <h1>AngularJS Assignment - 1</h1>
+        <div ng-controller = "appController">
+            <input type="text" ng-model = "itemsList" ng-value="itemsList" style = "border: 2px solid {{border}}">
+            <button type="button" ng-click = "countItems()">Check If Too Much</button>
+            <div>
+                <span style = "color: {{color}}">{{message}}</span>
+            </div>
+        </div>
+    </body>
+</html>
